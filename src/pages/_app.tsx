@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>MooBiz 讀墨管理後台</title>
+        <title>Eva's Blog</title>
       </Head>
       <Container>
         <SideMenu />
