@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "sh scripts/install-hook.sh && sh scripts/dev.sh",
     "build": "next build",
     "start": "npx serve@latest build",
-    "postinstall": "husky",
     "next-lint": "next lint",
     "lint": "eslint .",
     "eslint:fix": "eslint --fix .",
@@ -17,6 +16,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.20",
     "next": "14.2.4",
+    "open-cli": "^8.0.0",
     "react": "^18",
     "react-dom": "^18"
   },
