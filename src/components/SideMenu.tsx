@@ -2,9 +2,13 @@ import { type FC } from 'react';
 
 import { Box, Typography } from '@mui/material';
 
-const SideMenu: FC = () => {
+interface SideMenuProps {
+  className?: string;
+}
+
+const SideMenu: FC<SideMenuProps> = ({ className }) => {
   return (
-    <Box>
+    <Box className={className}>
       <Typography>{`Eva's blog`}</Typography>
     </Box>
   );
