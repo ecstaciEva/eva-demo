@@ -48,4 +48,4 @@ git_stash
 tsc_check
 
 echo
-exit ${status}
+exit ${status} npx lint-staged
