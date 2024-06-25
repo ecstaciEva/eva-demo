@@ -5,7 +5,7 @@ import { Box, Typography } from '@mui/material';
 const SideMenu: FC = () => {
   return (
     <Box>
-      <Typography>Eva Demo</Typography>
+      <Typography>{`Eva's blog`}</Typography>
     </Box>
   );
 };
