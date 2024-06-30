@@ -1,15 +1,15 @@
-import { type FC } from 'react';
+import { type FC, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const ErrorPage: FC = () => {
-  return null;
-};
+  const router = useRouter();
 
-export const getStaticProps = () => {
-  return {
-    redirect: {
-      destination: '/',
-    },
-  };
+  useEffect(() => {
+    if (!router.isReady) return;
+    router.replace('/');
+  }, [router]);
+
+  return null;
 };
 
 export default ErrorPage;
