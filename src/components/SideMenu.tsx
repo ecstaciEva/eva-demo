@@ -3,15 +3,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
 
-import config, { LinkedInUrl } from '@/config';
+import config from '@/config';
 
-import {
-  Box,
-  Link as MuiLink,
-  List,
-  ListItem,
-  Typography,
-} from '@mui/material';
+import { Box, List, ListItem, Typography } from '@mui/material';
 
 interface SideMenuProps {
   className?: string;
@@ -67,26 +61,26 @@ const SideMenu: FC<SideMenuProps> = ({ className }) => {
   );
 };
 
-interface SelfInfoListProps {
-  className?: string;
-}
+// interface SelfInfoListProps {
+//   className?: string;
+// }
 
-const SelfInfoList: FC<SelfInfoListProps> = ({ className }) => {
-  return (
-    <List
-      sx={{
-        '& > li': {
-          padding: '0rem 1rem',
-        },
-      }}
-      className={className}
-    >
-      <ListItem>
-        <MuiLink href={LinkedInUrl}>LinkedIn</MuiLink>
-      </ListItem>
-      <ListItem>Email : evayu.f2e@gmail.com</ListItem>
-    </List>
-  );
-};
+// const SelfInfoList: FC<SelfInfoListProps> = ({ className }) => {
+//   return (
+//     <List
+//       sx={{
+//         '& > li': {
+//           padding: '0rem 1rem',
+//         },
+//       }}
+//       className={className}
+//     >
+//       <ListItem>
+//         <MuiLink href={LinkedInUrl}>LinkedIn</MuiLink>
+//       </ListItem>
+//       <ListItem>Email : evayu.f2e@gmail.com</ListItem>
+//     </List>
+//   );
+// };
 
 export default SideMenu;
