@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "next-dev": "next dev",
     "dev": "sh scripts/install-hook.sh && sh scripts/dev.sh",
     "build": "next build",
     "start": "npx serve@latest build",
