@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: false,
   // trailingSlash: true,
   output: 'export',
-  distDir: 'build',
+  distDir: 'docs',
   images: {
     loader: 'akamai',
     path: '',
